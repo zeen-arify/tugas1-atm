@@ -2,7 +2,7 @@
 using namespace std;
 
 int PIN, saldo, inputPIN, nominalTarik, rekeningTujuan, nominalTransfer, nominalSedekah;
-char pilihanMenu;
+char inputPilihanMenu, pilihanMenu;
 bool mengulangMenu;
 
 int main(){
@@ -11,7 +11,7 @@ int main(){
     cout << "SELAMAT DATANG DI MESIN ATM PENGGANDA UANG" << endl;
     cout << "\nSILAKAN MASUKKAN KARTU ATM ANDA" << endl;
 
-    cout << "\n \nSebelum menggunakan kartu Anda, silakan setting terlebih dahulu PIN ATM Anda." << endl;
+    cout << "\nSebelum menggunakan kartu Anda, silakan setting terlebih dahulu PIN ATM Anda." << endl;
     cout << "Masukkan 6 Digit Angka PIN Baru Anda : " << endl;
     cin >> PIN;
 
@@ -31,7 +31,8 @@ int main(){
             cout << "B : Tarik Tunai" << endl;
             cout << "C : Transfer" << endl;
             cout << "D : Sedekah" << endl;
-            cin >> pilihanMenu;
+            cin >> inputPilihanMenu;
+            pilihanMenu = toupper(inputPilihanMenu);
         } while (pilihanMenu != 'A' && pilihanMenu != 'B' && pilihanMenu != 'C' && pilihanMenu != 'D' );
 
         switch (pilihanMenu) {
@@ -79,11 +80,13 @@ int main(){
                 cout << "Masukkan Kode dengan benar" << endl;
         }
 
+        char inputInginMengulang;
         char inginMengulang;
         do {
             cout << "Apakah Anda ingin melakukan transaksi lain? (Y/N)" << endl;
 
-            cin >> inginMengulang;
+            cin >> inputInginMengulang;
+            inginMengulang = toupper(inputInginMengulang);
 
             if (inginMengulang == 'Y'){
                 mengulangMenu = true;
