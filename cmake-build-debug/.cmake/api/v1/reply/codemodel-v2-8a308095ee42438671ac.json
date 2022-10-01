@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "tugas1_atm::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-tugas1_atm-Debug-9fc692f75fde332b08e8.json",
+					"jsonFile" : "target-tugas1_atm-Debug-677139227911638897ff.json",
 					"name" : "tugas1_atm",
 					"projectIndex" : 0
 				}
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "F:/01 ITB AAS Indonesia/Algoritma dan Pemrograman/00 Tugas/02 Coding/tugas1-atm/cmake-build-debug",
-		"source" : "F:/01 ITB AAS Indonesia/Algoritma dan Pemrograman/00 Tugas/02 Coding/tugas1-atm"
+		"build" : "E:/01 ITB AAS Indonesia/Algoritma dan Pemrograman/00 Tugas/tugas1-atm/cmake-build-debug",
+		"source" : "E:/01 ITB AAS Indonesia/Algoritma dan Pemrograman/00 Tugas/tugas1-atm"
 	},
 	"version" : 
 	{
