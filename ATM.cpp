@@ -9,13 +9,13 @@ int main(){
 
 
     cout << "SELAMAT DATANG DI MESIN ATM PENGGANDA UANG" << endl;
-    cout << "SILAKAN MASUKKAN KARTU ATM ANDA" << endl;
+    cout << "\nSILAKAN MASUKKAN KARTU ATM ANDA" << endl;
 
-    cout << "Sebelum menggunakan kartu Anda, silakan setting terlebih dahulu PIN ATM Anda." << endl;
+    cout << "\n \nSebelum menggunakan kartu Anda, silakan setting terlebih dahulu PIN ATM Anda." << endl;
     cout << "Masukkan 6 Digit Angka PIN Baru Anda : " << endl;
     cin >> PIN;
 
-    cout << "Masukkan Jumlah Saldo Anda : " << endl;
+    cout << "\nMasukkan Jumlah Saldo Anda : " << endl;
     cin >> saldo;
 
 
