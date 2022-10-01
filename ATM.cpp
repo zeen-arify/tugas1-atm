@@ -11,9 +11,12 @@ int main(){
     cout << "SELAMAT DATANG DI MESIN ATM PENGGANDA UANG" << endl;
     cout << "SILAKAN MASUKKAN KARTU ATM ANDA" << endl;
 
+
     cout << "Sebelum menggunakan kartu Anda, silakan setting terlebih dahulu PIN ATM Anda." << endl;
     cout << "Masukkan 6 Digit Angka PIN Baru Anda : " << endl;
     cin >> PIN;
+
+
 
     cout << "Masukkan Jumlah Saldo Anda : " << endl;
     cin >> saldo;
@@ -67,7 +70,7 @@ int main(){
                 break;
 
             default:
-                cout << "Masukkan Kode dengan benar" << endl;
+                cout << "Masukkan Kode dengan benar." << endl;
         }
 
         char inginMengulang;
