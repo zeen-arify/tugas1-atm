@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "tugas1_atm",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "tugas1_atm::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tugas1_atm-Debug-9fc692f75fde332b08e8.json",
+					"name" : "tugas1_atm",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "F:/01 ITB AAS Indonesia/Algoritma dan Pemrograman/00 Tugas/02 Coding/tugas1-atm/cmake-build-debug",
+		"source" : "F:/01 ITB AAS Indonesia/Algoritma dan Pemrograman/00 Tugas/02 Coding/tugas1-atm"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}
