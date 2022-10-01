@@ -1,4 +1,4 @@
-# Install script for directory: F:/01 ITB AAS Indonesia/Algoritma dan Pemrograman/00 Tugas/02 Coding/tugas1-atm
+# Install script for directory: E:/01 ITB AAS Indonesia/Algoritma dan Pemrograman/00 Tugas/tugas1-atm
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "F:/01 ITB AAS Indonesia/Algoritma dan Pemrograman/00 Tugas/02 Coding/tugas1-atm/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "E:/01 ITB AAS Indonesia/Algoritma dan Pemrograman/00 Tugas/tugas1-atm/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

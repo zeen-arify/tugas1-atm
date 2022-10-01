@@ -41,31 +41,40 @@ int main(){
             case 'B':
                 cout << "Masukkan Nominal yang Anda Inginkan :" << endl;
                 cin >> nominalTarik;
-                cout << "Silakan Tunggu, permintaan Anda sedang kami proses." << endl;
-                saldo -= nominalTarik;
-                cout << "Uang Anda telah siap, silakan ambil" << endl;
-                cout << "Sisa saldo Anda sekarang adalah : " << saldo << endl;
+                if (nominalTarik <= saldo){
+                    cout << "Silakan Tunggu, permintaan Anda sedang kami proses." << endl;
+                    saldo -= nominalTarik;
+                    cout << "Uang Anda telah siap, silakan ambil" << endl;
+                    cout << "Sisa saldo Anda sekarang adalah : " << saldo << endl;
+                }else{
+                    cout << "Maaf, Saldo Anda tidak mencukupi." << endl;
+                }
                 break;
             case 'C':
                 cout << "Masukkan nomor rekening tujuan :" << endl;
                 cin >> rekeningTujuan;
                 cout << "Masukkan nominal yang ingin Anda transfer :" << endl;
                 cin >> nominalTransfer;
-                cout << "Silakan Tunggu, permintaan Anda sedang kami proses." << endl;
-                saldo -= nominalTransfer;
-                cout << "Transfer ke rekening " << rekeningTujuan << " sebesar " << nominalTransfer << " telah berhasil." << endl;
-                cout << "Sisa saldo Anda sekarang adalah : " << saldo << endl;
-                break;
+                if (nominalTransfer <= saldo){
+                    cout << "Silakan Tunggu, permintaan Anda sedang kami proses." << endl;
+                    saldo -= nominalTransfer;
+                    cout << "Transfer ke rekening " << rekeningTujuan << " sebesar " << nominalTransfer << " telah berhasil." << endl;
+                    cout << "Sisa saldo Anda sekarang adalah : " << saldo << endl;
+                }else{
+                    cout << "Maaf, Saldo Anda tidak mencukupi." << endl;
+                }
+                 break;
             case 'D':
                 cout << "Masukkan nominal sedekah Anda :" << endl;
                 cin >> nominalSedekah;
-                cout << "Silakan Tunggu, permintaan Anda sedang kami proses." << endl;
-                saldo -= nominalSedekah;
-                cout << "Sisa saldo Anda sekarang adalah : " << saldo << endl;
+                if (nominalSedekah <= saldo){
+                    cout << "Silakan Tunggu, permintaan Anda sedang kami proses." << endl;
+                    saldo -= nominalSedekah;
+                    cout << "Sisa saldo Anda sekarang adalah : " << saldo << endl;
+                }else{
+                    cout << "Maaf, Saldo Anda tidak mencukupi." << endl;
+                }
                 break;
-            case 'X':
-                break;
-
             default:
                 cout << "Masukkan Kode dengan benar" << endl;
         }
