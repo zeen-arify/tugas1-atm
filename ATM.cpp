@@ -2,7 +2,7 @@
 using namespace std;
 
 int PIN, saldo, inputPIN, nominalTarik, rekeningTujuan, nominalTransfer, nominalSedekah;
-char inputPilihanMenu, pilihanMenu;
+char pilihanMenu;
 bool mengulangMenu;
 
 int main(){
