@@ -42,10 +42,9 @@ int main(){
             cout << "B : Tarik Tunai" << endl;
             cout << "C : Transfer" << endl;
             cout << "D : Sedekah" << endl;
-            cout << "X : Exit" << endl;
-            cin >> inputPilihanMenu;
-            pilihanMenu = toupper(inputPilihanMenu);
-        } while (pilihanMenu != 'A' && pilihanMenu != 'B' && pilihanMenu != 'C' && pilihanMenu != 'D' );
+            cout << "X : Exit Program" << endl;
+            cin >> pilihanMenu;
+        } while (pilihanMenu != 'A' && pilihanMenu != 'B' && pilihanMenu != 'C' && pilihanMenu != 'D' && pilihanMenu != 'X');
 
         switch (pilihanMenu) {
             case 'A':
@@ -76,7 +75,7 @@ int main(){
                 }else{
                     cout << "Maaf, Saldo Anda tidak mencukupi." << endl;
                 }
-                 break;
+                break;
             case 'D':
                 cout << "Masukkan nominal sedekah Anda :" << endl;
                 cin >> nominalSedekah;
@@ -89,7 +88,7 @@ int main(){
                 }
                 break;
             case 'X':
-                goto exitLabel;
+                goto exitlabel;
             default:
                 cout << "Masukkan Kode dengan benar" << endl;
         }
@@ -110,8 +109,7 @@ int main(){
         } while (inginMengulang != 'Y' && inginMengulang != 'N');
 
     } while (mengulangMenu);
-    
-    exitLabel:
+   exitlabel:
     cout << "Silakan Ambil Kartu Anda, Terima Kasih" << endl;
 
     return 0;
