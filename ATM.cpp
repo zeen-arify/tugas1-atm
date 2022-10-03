@@ -18,8 +18,7 @@ int main(){
     cout << "\nMasukkan Jumlah Saldo Anda : " << endl;
     cin >> saldo;
 
-
-    do {
+        do {
         cout << "MASUKKAN PIN ANDA DENGAN BENAR: " << endl;
         cin >> inputPIN;
     } while (inputPIN != PIN);
