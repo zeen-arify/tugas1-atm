@@ -15,12 +15,24 @@ int main(){
     cout << "Masukkan 6 Digit Angka PIN Baru Anda : " << endl;
     cin >> PIN;
 
-    cout << "\nMasukkan Jumlah Saldo Anda : " << endl;
+    cout << "Masukkan Jumlah Saldo Anda : " << endl;
     cin >> saldo;
 
-        do {
+    cout << "====================================================================================== \n" << endl;
+
+
+    short wrongPIN = 0;
+    do {
         cout << "MASUKKAN PIN ANDA DENGAN BENAR: " << endl;
         cin >> inputPIN;
+        if (inputPIN != PIN){
+            wrongPIN++;
+            cout << "PIN yang Anda masukkan Salah"<< endl;
+            if (wrongPIN == 3){
+                cout << "Maaf, Kartu Anda terblokir, Silakan datang ke Kantor Terdekat"<< endl;
+                goto exitLabel;
+            }
+        }
     } while (inputPIN != PIN);
 
     do {
@@ -30,6 +42,7 @@ int main(){
             cout << "B : Tarik Tunai" << endl;
             cout << "C : Transfer" << endl;
             cout << "D : Sedekah" << endl;
+            cout << "X : Exit" << endl;
             cin >> inputPilihanMenu;
             pilihanMenu = toupper(inputPilihanMenu);
         } while (pilihanMenu != 'A' && pilihanMenu != 'B' && pilihanMenu != 'C' && pilihanMenu != 'D' );
@@ -75,6 +88,8 @@ int main(){
                     cout << "Maaf, Saldo Anda tidak mencukupi." << endl;
                 }
                 break;
+            case 'X':
+                goto exitLabel;
             default:
                 cout << "Masukkan Kode dengan benar" << endl;
         }
@@ -95,7 +110,8 @@ int main(){
         } while (inginMengulang != 'Y' && inginMengulang != 'N');
 
     } while (mengulangMenu);
-
+    
+    exitLabel:
     cout << "Silakan Ambil Kartu Anda, Terima Kasih" << endl;
 
     return 0;
